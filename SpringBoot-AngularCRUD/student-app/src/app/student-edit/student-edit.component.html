@@ -1,0 +1,34 @@
+<h3 style="margin-top: 50px">Welcome to Student Edit Page</h3>
+<form (ngSubmit)="updateStudent()">
+  Student Id :
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="student.sid"
+    name="sId"
+    readonly
+  />
+  Student Name :
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="student.sname"
+    name="sName"
+  />
+  Student Fee :
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="student.sfee"
+    name="sFee"
+  />
+  Student Course :
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="student.scourse"
+    name="sCourse"
+  />
+  <br />
+  <input type="submit" value="Update" class="btn btn-success" />
+</form>

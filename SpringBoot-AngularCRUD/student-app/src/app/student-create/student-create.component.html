@@ -1,0 +1,29 @@
+<h3 style="margin-top: 50px">Student Register</h3>
+<div style="width: 50%">
+  <form (ngSubmit)="createStudent()">
+    Student Name :
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="student.sname"
+      name="sName"
+    />
+    Student Fee :
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="student.sfee"
+      name="sFee"
+    />
+    Student Course :
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="student.scourse"
+      name="sCourse"
+    />
+    <br />
+    <input type="submit" value="Register" class="btn btn-success" />
+  </form>
+</div>
+{{ message.message }}
